@@ -1,0 +1,1040 @@
+@font-face
+{
+    font-family:rational-light;
+    src: url(font/Rene\ Bieder\ -\ RationalDisplayDEMO-Light.otf);
+}
+
+@font-face
+{
+    font-family:rational-semibold;
+    src: url(font/Rene\ Bieder\ -\ RationalDisplayDEMO-SemiBold.otf);
+}
+
+body
+{
+margin:0px;
+background-color: #f3f3f3;
+font-family:rational-light;
+}
+
+ul
+{
+margin:0px;
+padding:0px;
+}
+
+li
+{
+list-style:none;
+}
+
+a
+{
+text-decoration:none;
+}
+
+.lt1
+{
+    display: none !important;
+}
+
+p
+{
+margin:0px;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    margin: 0px;
+    font-family:rational-semibold;
+}
+
+.cont
+{
+    max-width: 1460px;
+    margin: auto;
+    width: 100%;
+}
+
+.lt2
+{
+    display: flex;
+}
+
+header .button-my::before 
+{
+    background-color: #f7a161;
+}
+
+.sec1
+{
+    padding: 135px 85px;
+}
+
+/* Slider Start */
+.slideshow-container 
+{
+    max-width: 1460px;
+    position: relative;
+    margin: auto;
+}
+  
+.prev, .next 
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+.next
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover 
+{
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.dot 
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active-slid, .dot:hover
+{
+    background-image: linear-gradient(90deg, #b66ed4 0%, #f15d73 35%, #f7a161 100%);
+}
+
+.fade 
+{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade 
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* Slider End */
+
+.slidcon
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h1paa
+{
+width: 43%;
+}
+
+.h1paa h1
+{
+font-size: 70px;
+}
+
+.sec3 .h1paa h1
+{
+font-size: 60px;
+width: 65%;
+}
+
+.helltype
+{
+    font-size: 70px;
+    font-family:rational-semibold;
+    display: flex;
+}
+
+.hell
+{
+    margin-right: 14px;
+}
+
+.typed-out
+{
+    background: -webkit-linear-gradient(74deg, #b66ed4, #f15d73, #f7a161);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(20, end) forwards infinite;
+    width: 0;
+}
+
+@keyframes typing 
+{
+    from { width: 0 }
+    to { width: 100% }
+}
+
+.h1paa h1 span
+{
+  background: -webkit-linear-gradient(74deg, #b66ed4, #f15d73, #f7a161);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.h1paa p
+{
+  font-size: 20px;
+  margin: 40px 0px !important;
+  font-family:rational-light;
+}
+
+.gitvaw
+{
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.git
+{
+    padding: 20px 40px !important;
+    border-radius: 50px !important;
+    margin-right: 40px;
+}
+
+.vaw
+{
+    background: transparent !important;
+    border: 1px solid #000 !important;
+    padding: 20px 40px !important;
+    border-radius: 50px !important;
+}
+
+.vaw::before
+{
+    background-image: linear-gradient(90deg, #b66ed4 0%, #f15d73 35%, #f7a161 100%);
+}
+
+.imgpic
+{
+    width: 40%;
+}
+
+.imgpic img
+{
+    width: 100%;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.sec2
+{
+padding-bottom: 100px;
+}
+
+.bekrdiv
+{
+    background-image: linear-gradient(90deg, #b66ed4 0%, #f15d73 35%, #f7a161 100%);
+    padding: 10px 0px;
+    overflow-x: clip;
+    width: 100%;
+}
+
+.content
+{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+    transform: rotate(-2deg);
+    box-shadow: 0px 0px 10px 0px #ddd;
+}
+
+.content li
+{
+    white-space: nowrap;
+}
+
+.content li h3
+{
+    font-size: 26px;
+}
+
+.content li h3::before
+{
+    content: "";
+    background-image: url(image/icon.png);
+    padding-right: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sec3
+{
+padding: 84px 85px;
+}
+
+.services
+{
+display: flex;
+justify-content: space-between;
+}
+
+.toggle
+{
+    width: 50%;
+}
+
+/* Accordation Start */
+.accordion 
+{
+    background-color: #f3f3f3;
+    cursor: pointer;
+    padding: 40px 0px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    border-bottom: 2px solid #bebebe;
+    position: relative;
+}
+
+.accordion.active-acc::before
+{
+    content: "\f061";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 50px;
+    bottom: 15px;
+    border-radius: 50px;
+    padding: 20px;
+    background-image: linear-gradient(90deg, #b66ed4 0%, #f15d73 35%, #f7a161 100%);
+    transform: rotate(-45deg);
+}
+
+.panel 
+{
+    padding:20px;
+    display: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+/* Accordation End */
+
+.sec4
+{
+    padding: 56px 85px;
+}
+
+.prohead
+{
+    padding-bottom: 50px;
+}
+
+.prohead h1
+{
+    font-size: 60px;
+    text-align: center;
+}
+
+.clintimp
+{
+    padding-top: 50px;
+}
+
+.webappdash
+{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.conthdg
+{
+width: 33%;
+}
+
+.conthdg h3
+{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.conthdg p
+{
+    font-size: 20px;
+}
+
+.contimg
+{
+    width: 33%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.contimg:hover img
+{
+    transform: scale3d(1.1,1.1,1);
+}
+
+.contimg img
+{
+width: 100%;
+transition: transform 1s;
+}
+
+.contimg:hover .icon
+{
+    display: block;
+    background-color:#0000006e;
+}
+
+.icon
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.icon a
+{
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.icon a i
+{
+    transform: rotate(-45deg);
+    border-radius: 100px;
+    padding: 20px;
+    background-image: linear-gradient(90deg, #b66ed4 0%, #f15d73 35%, #f7a161 100%);
+    font-size: 30px;
+}
+
+.contqunty
+{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contqunty h4
+{
+    font-size: 40px;
+}
+
+.sec5
+{
+    padding: 90px 85px;
+    background-color: #000;
+}
+
+.sec5 .webappdash
+{
+margin: 0px;
+display: flex;
+justify-content: space-around;
+}
+
+.sec5 .conthdg 
+{
+    width: auto;
+}
+
+.sec5 .conthdg h3 
+{
+    font-size: 24px;
+    background: -webkit-linear-gradient(74deg, #b66ed4, #f15d73, #f7a161);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.sec5 h4 
+{
+    color: #fff;
+    font-size: 60px;
+}
+
+.sec6
+{
+    padding: 100px 85px;
+}
+
+.eocf
+{
+    padding-bottom: 50px;
+}
+
+.eocf h1
+{
+    font-size: 60px;
+}
+
+/* Carousel Start */
+.client-testimonial-carousel .owl-dots button 
+{
+    height: 5px;
+    background: #6aaf08 !important;
+    width: 20px;
+    display: inline-block;
+    margin: 5px;
+    transition: .2s;
+    border-radius: 2px;
+}
+
+.owl-dots
+{
+    display: none !important;
+}
+
+.client-testimonial-carousel button.owl-dot.active
+{
+    background: #000 !important;
+    width: 30px;
+}
+
+.client-testimonial-carousel .owl-dots 
+{
+    text-align: center;
+    margin-top: 25px
+}
+
+.single-testimonial-item 
+{
+    position: relative;
+    margin: 2px;
+    padding: 20px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #b66ed4, #f15d73, #f7a161);
+}
+
+.single-testimonial-item img
+{
+    width: 60px !important;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+.single-testimonial-item p
+{
+    margin-bottom: 20px;
+}
+
+.single-testimonial-item h3 
+{
+    font-size: 20px;
+    font-style: normal;
+}
+
+.single-testimonial-item h3 span
+{
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    font-family:rational-light;
+}
+/* Carousel Start */
+
+.sec7
+{
+    padding: 90px 85px;
+    background-color: #000;
+}
+
+.project
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.projecttxt
+{
+    width: 75%;
+}
+
+.projecttxt h1
+{
+color: #fff;
+font-size: 70px;
+}
+
+.projecticn
+{
+    display: flex;
+}
+
+.projecticn a
+{
+    color: #fff !important;
+    border-radius: 100% !important;
+    padding: 70px 35px !important;
+}
+
+.sec7 .button-my::before
+{
+    background-image: linear-gradient(-90deg, #b66ed4 33.33%, #f15d73 33.33%, #f7a161 33.33%);
+}
+
+footer
+{
+    padding: 90px 85px;
+}
+
+.endlast
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastleft a
+{
+    color: #000;
+    font-size: 20px;
+    font-family:rational-semibold;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.lastleft a span
+{
+    color: #000;
+    font-size: 12px;
+    font-family:rational-semibold;
+}
+
+.lastleft p
+{
+    font-size: 20px;
+    font-style: normal;
+    width: 60%;
+}
+
+.lastright
+{
+    width: 24%;
+}
+
+.lastright ul
+{
+    display: flex;
+}
+
+.hac
+{
+    margin-bottom: 30px;
+}
+
+.hac li
+{
+    margin-left: 50px;
+}
+
+.hac li a
+{
+    color: #000;
+}
+
+.iii
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.iii li
+{
+margin-left: 15px;
+background-image: linear-gradient(90deg, #b66ed4 0%, #f15d73 35%, #f7a161 100%);
+display: inline-flex;
+border-radius: 100%;
+padding: 2px;
+}
+
+.iii li a
+{
+    color: #000;
+    padding:  10px 15px;
+    background: #f3f3f3;
+    border-radius: 100%;
+}
+
+/* Header Start */
+header
+{
+    background: #000;
+    padding: 30px 85px;
+}
+
+.baloch
+{
+    font-family:rational-semibold;
+}
+
+.baloch a
+{
+    color: #fff;
+    font-size: 20px;
+}
+
+.baloch a span
+{
+    color: #fff;
+    font-size: 12px;
+}
+
+.button-my
+{
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #000;
+    background-image: linear-gradient(90deg, #b66ed4 0%, #f15d73 35%, #f7a161 100%);
+    font-family:rational-semibold;
+    position: relative;
+    overflow: hidden;
+    border:1px solid transparent;
+}
+
+.button-my span
+{
+    z-index: 2;
+    position: relative;
+}
+
+.button-my:hover
+{
+    color: #fff;
+    border:1px solid transparent !important;
+}
+
+.button-my::before 
+{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s linear;
+    transform: translateX(-100%);
+}
+
+.button-my:hover:before 
+{
+    transform: translateX(0) !important;
+    z-index: 1 !important;
+}
+
+.topnav 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menus
+{
+display: flex;
+}
+
+.menus li
+{
+    margin-left: 50px;
+}
+
+.topnav .menu a 
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  font-family:rational-light;
+  font-size: 17px;
+  position: relative;
+}
+
+.menus li a span:hover::after 
+{
+    transform: scaleX(1);
+}
+
+.menus li a span::after
+{
+    content: " ";
+    position: absolute;
+    top: calc(50% + 1.15em);
+    left: 0;
+    width: 100%;
+    border-top-style: solid;
+    transform: scaleX(0);
+    transition: transform .2s ease-in-out;
+}
+
+.topnav .icon-nav 
+{
+  display: none !important;
+}
+
+@media screen and (max-width: 600px) 
+{
+header
+{
+    padding: 20px 30px;
+}
+
+section
+{
+    padding: 50px 20px !important;
+}
+
+.menus 
+{
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+    background: #000;
+    width: 100%;
+}
+
+.baloch a 
+{
+    display: block !important;
+}
+
+.prohead h1 {
+    font-size: 40px;
+}
+
+.helltype
+{
+    font-size: 50px;
+}
+
+.icon-nav
+{
+    position: relative !important;
+}
+
+.topnav .menu a 
+{
+    display: none;
+}
+
+.topnav .menu a.icon-nav 
+{
+    float: right;
+    display: block !important;
+}
+
+.conthdg 
+{
+    margin-bottom: 20px;
+}
+
+.conthdg h3 
+{
+    font-size: 32px;
+    margin: 0px;
+}
+
+.sec3 .h1paa h1 
+{
+    font-size: 37px !important;
+    width: 100%;
+}
+
+.sec3 .h1paa p
+{
+    font-size: 17px;
+    margin: 20px 0px 40px 0px !important;
+}
+
+.projecttxt 
+{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.projecttxt h1 
+{
+    font-size: 34px;
+}
+
+.eocf 
+{
+    padding-bottom: 30px;
+}
+
+.eocf h1 
+{
+    font-size: 24px;
+}
+
+.prohead {
+    padding: 0px !important;
+}
+
+.conthdg h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.h1paa 
+{
+    width: 101% !important;
+}
+
+.h1paa h1 {
+    font-size: 50px;
+}
+
+.projecticn 
+{
+    display: flex;
+}
+
+.services, .gitvaw, .webappdash, .contqunty, .project, .endlast
+{
+    display: block !important;
+}
+
+.lastright 
+{
+    width: 100%;
+}
+
+.lastleft 
+{
+    padding-bottom: 40px;
+}
+
+.lastleft p 
+{
+    font-size: 18px;
+    width: 100%;
+}
+
+.lastleft a 
+{
+    margin-bottom: 10px;
+}
+
+footer 
+{
+    padding: 30px;
+}
+
+.iii 
+{
+    justify-content: center;
+}
+
+.wd100
+{
+    width: 100%;
+}
+
+.contqunty h4 
+{
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.button-my
+{
+    display: inline-block;
+}
+
+.lt1
+{
+    display: flex !important;
+}
+
+.lt2
+{
+    display: none !important;
+}
+
+.slidcon 
+{
+    display: block;
+    margin-bottom: 30px;
+}
+
+ul.menus li a 
+{
+    margin: 0px !important;
+    padding: 20px;
+}
+
+.hac 
+{
+    margin-bottom: 20px;
+}
+}
+
+@media screen and (max-width: 600px) 
+{
+.topnav.responsive 
+{
+    position: relative;
+}
+
+.topnav.responsive .icon-nav
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+  .topnav.responsive .menu a
+{
+    float: none;
+    display: block;
+    text-align: left;
+}
+}
+/* Header End */
+
